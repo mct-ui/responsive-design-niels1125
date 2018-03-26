@@ -395,6 +395,30 @@ a:focus {
 }
 
 /*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header__nav {
+  display: none;
+}
+
+@media (min-width: 992px) {
+    .c-header {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .c-header__nav {
+      display: block;
+    }
+}
+
+/*
     Component: Nav
     ---
     Main navigation of the site
@@ -416,6 +440,12 @@ a:focus {
 .c-nav__link:visited,
 .c-nav__link:active {
   color: #202024;
+}
+
+.c-nav__link--meta,
+.c-nav__link--meta:visited,
+.c-nav__link--meta:active{
+  color: #6c6c75;
 }
 
 .c-nav__link:hover,
